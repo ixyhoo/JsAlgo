@@ -4,10 +4,12 @@ function selectionSort(array){
     for(let j = i + 1; j < array.length; j++){
       if(array[j] < array[minIndex]){
         minIndex = j
-        console.log(minIndex);
+      
       }
     }
+    [array[i], array[minIndex]] = [array[minIndex], array[i]]
   }
+  console.log(array);
 }
 
 

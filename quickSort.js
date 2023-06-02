@@ -1,4 +1,13 @@
+function quickSort(array){
+  const pivot = array[array.length - 1];
+  let arrleft = [];
+  let arrRight = [];
 
+  for (let i = 0; i < array.length - 1; i++){
+    array[i] < pivot ? arrleft.push(array[i]) : arrRight.push(array[i])
+  }
+  console.log(arrleft, arrRight);
+}
 
 
   quickSort=([

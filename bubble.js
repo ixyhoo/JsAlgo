@@ -14,4 +14,8 @@
   console.log(array);
 }*/
 
-bubbleSort([400, 2, 132, 47, 32, 6, 18, 5, 3]) 
+function bubble(array) {
+  console.log(array.sort((a, b) => a - b));
+}
+
+bubble([400, 2, 132, 47, 32, 6, 18, 5, 3]) 
